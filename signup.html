@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <title>Nanjing Youth Olympics Games 2014</title>
+
+   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+
+   <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/respond.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+
+<body>
+   <div class="page-header">
+      <div class="container">
+         <h1>Nanjing Youth Olympics 2014</h1>
+      </div>
+   </div>
+   <!-- NAVIGATION BAR -->
+   <div class="navbar navbar-default navbar-inverse navbar-static-top" id="nav">
+      <nav class="navbar-wrapper navbar-default" role="navigation">
+      <div class="container">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+         </div>
+      <div id="navbar" class="navbar-collapse collapse">
+         <ul class="nav nav-pills">
+            <li role="presentation"><a href="index.html"><span class='glyphicon glyphicon-home'></span> Home</a></li>
+            <li role="presentation"><a href="standings.html"><span class='glyphicon glyphicon-glass'></span> Standings</a></li>
+            <li role="presentation"><a href="locations.html"><span class='glyphicon glyphicon-map-marker'></span> Locations</a></li>
+            <li role="presentation" class="active"><a href="signup.html"><span class='glyphicon glyphicon-user'></span> Sign Up</a></li>
+         </ul>
+      </div>
+      </nav>
+   </div>
+   <!-- END NAVIGATION BAR -->  
+   
+   <!-- CONTENT -->
+   <div class='container'>
+      <form role="form">
+         <fieldset>
+         <div class="col-sm-6 col-md-6 pull-left" id="register">
+         <legend>Register to Buy Ticket Online</legend>
+            <div class="form-group">
+               <label for="name">Name</label>
+               <span class="glyphicon glyphicon-user"></span>
+               <input class="form-control" id=name name=name type=text placeholder="First and Last name" required>
+            </div>
+            <div class="form-group">
+               <label for=address>Address</label>
+               <span class="glyphicon glyphicon-map-marker"></span>
+               <input  class="form-control" id=address name=address type=text placeholder="Address" required>
+            </div>
+            <div class="form-group">
+               <label for=city>City</label>
+               <span class="glyphicon glyphicon-map-marker"></span>
+               <input class="form-control" id=city name=city type=text placeholder="City" required>
+            </div>
+            <div class="form-group">
+               <label for=postcode>Postal Code</label>
+               <span class="glyphicon glyphicon-map-marker"></span>
+               <input class="form-control" id=postcode name=postcode type=text placeholder="Postal Code" required>
+            </div>
+            <div class="form-group">
+               <label for=postcode>Province</label>
+               <span class="glyphicon glyphicon-map-marker"></span>
+               <input class="form-control" id=postcode name=postcode type=text placeholder="Province" required>
+            </div>
+         </div>
+
+         <div class="col-sm-6 col-md-6 pull-right" id="register">
+         <legend>Payment Details</legend>
+         <div class="form-group" required>
+            <label for="card-type">Card Type</label>
+            <span class="glyphicon glyphicon-pencil"></span>
+            <select class="form-control" name="card-type" id="card-type">
+               <option value="1">Visa/Credit</option>
+               <option value="2">American Express</option>
+               <option value="3">Mastercard</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <label for=cardnumber>Card Number</label>
+            <span class="glyphicon glyphicon-pencil"></span>
+            <input class="form-control" id=cardnumber name=cardnumber maxlength="16" type=password placeholder="Type in 16 digits"require>
+         </div>
+         <div class="form-group">
+            <label for=cvv>CVV</label>
+            <span class="glyphicon glyphicon-pencil"></span>
+            <input class="form-control" id=cvv name=cvv maxlength="5" type=password placeholder="Type in youur 3 or 5 digits" required>
+         </div>
+         <div class="form-group">
+            <label for=cardholder>Card Holder's name</label>
+            <span class="glyphicon glyphicon-pencil"></span>
+            <input class="form-control" id=cardholder name=cardholder type=text placeholder="Type in name of card-holder" required>
+         </div>
+         
+         <hr> 
+               <div>
+               <button id="buttonSignUp" name="buttonSignUp" class="btn" type="submit">Sign Up</button>
+               </div>
+               <div>
+                  <button id="buttonReset" name="buttonReset" class="btn" type="reset">Reset</button>
+               </div>
+            </div> 
+         
+         </fieldset>
+      </form>
+   </div>
+   <!-- END CONTENT -->
+
+   <!-- FOOTER -->
+   <div class="page-footer">
+      <div class="container">
+         <div class="row">
+            <h3 align="center">&copy; 2014</h3>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
